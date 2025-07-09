@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Timh Bergstr&ouml;m</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.resume-image').forEach(function(img) {
+      img.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+      });
+    });
+  });
+</script>
+<body>
+  <div class="container">
+    <h1>Timh Bergstr&ouml;m</h1>
+    <div class="email">
+      Thuận An, Bình Dương, Việt Nam | +84 (0) 933 193 318 | 
+      <a href="mailto:timh.bergstrom@gmail.com" rel="nofollow noopener" target="_blank">timh.bergstrom@gmail.com</a>
+    </div>
+<div class="image-protect">
+  <img src="resume.png" alt="Timh Bergstrom's Resume" class="resume-image">
+  <div class="overlay"></div>
+</div>
+    <div class="email">
+      Thuận An, Bình Dương, Việt Nam | +84 (0) 933 193 318 | 
+      <a href="mailto:timh.bergstrom@gmail.com" rel="nofollow noopener" target="_blank">timh.bergstrom@gmail.com</a>
+    </div>
+  </div>
+  <div class="go-to-top">
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑ Go to Top</button>
+  </div>
+  </body>
+</html>
