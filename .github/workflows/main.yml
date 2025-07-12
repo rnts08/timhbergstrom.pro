@@ -1,0 +1,27 @@
+name: Upload via SCP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: .
+
+      - name: SCP Files
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSHKEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+          port: ${{ secrets.SSHPORT }}
+          source: "*.html,*.css,*.js,timh_bergstrom_resume.pdf"
+          target: ${{ secrets.TARGET }}
