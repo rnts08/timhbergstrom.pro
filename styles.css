@@ -301,6 +301,42 @@ hr {
     margin: 2rem 0;
 }
 
+.contact-footer {
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 153, 0, 0.2);
+    margin-top: 2rem;
+}
+
+.contact-footer p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+.contact-footer a {
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+.contact-footer a:hover {
+    text-decoration: underline;
+}
+
+.contact-footer nav {
+    margin-top: 1rem;
+}
+
+.contact-footer nav a {
+    color: var(--header-color);
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: opacity 0.3s;
+}
+
+.contact-footer nav a:hover {
+    opacity: 0.8;
+}
+
 @media (max-width: 1024px) {
     .bottom-grid {
         grid-template-columns: repeat(2, 1fr);
