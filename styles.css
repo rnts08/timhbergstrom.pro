@@ -1,0 +1,326 @@
+:root {
+    --bg-color: #101014;
+    --header-color: #ff9900;
+    --text-color: #ffffff;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --hover-bg: rgba(255, 153, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 2rem;
+}
+
+header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: var(--header-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info {
+    margin-bottom: 1.5rem;
+}
+
+.contact-info a {
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+nav a {
+    color: var(--header-color);
+    text-decoration: none;
+    margin: 0 1rem;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid var(--header-color);
+}
+
+.summary {
+    margin-bottom: 3rem;
+}
+
+.job-entry {
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.job-header {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.job-header:hover {
+    background: var(--hover-bg);
+}
+
+.job-header h3 {
+    margin: 0;
+}
+
+.company, .duration {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+.toggle-btn {
+    float: right;
+    background: none;
+    border: none;
+    color: var(--header-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.job-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.job-details.active {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+.job-details-content {
+    padding: 1rem;
+}
+
+.job-details ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+.certifications {
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.certifications ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.certifications li {
+    background: rgba(255, 153, 0, 0.1);
+    padding: 0.75rem 1.25rem;
+    border-radius: 4px;
+    text-align: center;
+    flex: 1 1 auto;
+    min-width: 200px;
+    max-width: calc(33.333% - 1rem);
+    border: 1px solid rgba(255, 153, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.certifications li:hover {
+    background: rgba(255, 153, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.certifications h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills, .education {
+    margin-top: 2rem;
+}
+
+.bottom-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Three equal columns */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.bottom-grid section {
+    min-height: 100%;  /* Ensure all sections are same height */
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-grid .skill-group,
+.bottom-grid .references {
+    flex: 1;  /* Make all sections take equal space */
+}
+
+.bottom-grid ul {
+    flex-grow: 1;  /* Allow lists to grow and fill space */
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-grid h2 {
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(255, 153, 0, 0.2);
+}
+
+.bottom-grid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bottom-grid li {
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    background: rgba(255, 153, 0, 0.1);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 153, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.bottom-grid li:hover {
+    background: rgba(255, 153, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.bottom-grid .detail {
+    display: block;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 0.25rem;
+}
+
+/* Blog post styles */
+.blog-post {
+    margin: 2rem 0 4rem;
+}
+
+.post-header {
+    margin-bottom: 2.5rem;
+}
+
+.kicker {
+    display: inline-block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255, 153, 0, 0.7);
+    margin-bottom: 0.75rem;
+}
+
+.lede {
+    font-size: 1.1rem;
+    margin: 0.25rem 0 0 0;
+}
+
+.meta {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+.note {
+    padding: 1rem;
+    border: 1px solid rgba(255, 153, 0, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 153, 0, 0.1);
+    margin: 1.25rem 0 2rem;
+}
+
+.reasons {
+    counter-reset: reason;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reasons li {
+    counter-increment: reason;
+    padding: 0.85rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 153, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 0 0.75rem 0;
+}
+
+.reasons li::before {
+    content: counter(reason, decimal-leading-zero) ".";
+    font-variant-numeric: tabular-nums;
+    display: inline-block;
+    width: 2.4ch;
+    margin-right: 0.6rem;
+    color: var(--header-color);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(255, 153, 0, 0.2);
+    margin: 2rem 0;
+}
+
+@media (max-width: 1024px) {
+    .bottom-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .bottom-grid {
+        grid-template-columns: 1fr;  /* Stack on mobile */
+        gap: 1rem;
+    }
+
+    .certifications li {
+        min-width: 150px;
+        max-width: 100%;
+    }
+
+    .certifications.education li {
+        min-width: calc(100% - 1rem);
+        max-width: calc(100% - 1rem);
+    }
+}
