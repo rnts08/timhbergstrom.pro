@@ -389,3 +389,31 @@ hr {
 .certifications.education {
     margin: 3rem 0;
 }
+
+.word-cloud {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.word-cloud .cloud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px;
+}
+
+.word-cloud .cloud span {
+    font-weight: 600;
+    display: inline-block;
+    color: #1a1a1a;
+    opacity: 0.85;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    font-size: calc(var(--size) * 0.45rem + 0.5rem);
+}
+
+.word-cloud .cloud span:hover {
+    transform: scale(1.15);
+    opacity: 1;
+    cursor: default;
+}
