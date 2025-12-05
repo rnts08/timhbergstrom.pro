@@ -23,5 +23,5 @@ jobs:
           key: ${{ secrets.SSHKEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           port: ${{ secrets.SSHPORT }}
-          source: "*.html,*.css,*.js,*.pdf"
+          source: "*.html,*.css,*.js,*.pdf,*.png,*.jpeg"
           target: ${{ secrets.TARGET }}

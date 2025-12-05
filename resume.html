@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tim Bergström — Resume</title>
+  <style>
+    :root{--accent:#0b5cff;--muted:#6b7280;--page-bg:#f6f7fb;--card-bg:#ffffff}
+    html,body{height:100%}
+    body{font-family:Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.45;color:#0f1724;background:var(--page-bg);padding:28px}
+    .container{max-width:900px;margin:0 auto}
+    .card{background:var(--card-bg);border-radius:12px;box-shadow:0 6px 30px rgba(15,23,36,0.06);overflow:hidden}
+    .header{display:flex;justify-content:space-between;align-items:flex-start;padding:28px 32px;border-bottom:1px solid #eef2ff}
+    .name{font-size:22px;font-weight:700;color:#071033}
+    .sub{color:var(--muted);font-size:13px;margin-top:6px}
+    .contact{text-align:right;font-size:13px;color:var(--muted)}
+    .contact div{margin-bottom:6px}
+    .body{display:grid;grid-template-columns:1fr 320px;gap:28px;padding:28px 32px}
+    .section{margin-bottom:20px}
+    h3{font-size:14px;margin:0 0 10px 0;color:#071033}
+    p.lead{margin:0;color:#111827}
+    ul{margin:0;padding-left:18px}
+    li{margin-bottom:8px}
+    .chip{display:inline-block;padding:6px 10px;border-radius:999px;background:#f1f5f9;color:#0f1724;font-size:12px;margin:6px 6px 0 0}
+    .experience .item{margin-bottom:14px}
+    .role{font-weight:600;color:#0b1220}
+    .meta{font-size:12px;color:var(--muted);margin-bottom:6px}
+    .tech{font-size:13px;color:#0b1220;margin-top:6px}
+    .right-column{background:linear-gradient(180deg, rgba(11,92,255,0.03), rgba(11,92,255,0.00));padding:22px;border-left:1px solid #f1f5f9}
+    .small{font-size:13px;color:#0b1220}
+    .cert-list, .edu-list{list-style:none;padding:0;margin:0}
+    .cert-list li, .edu-list li{margin-bottom:8px;font-size:13px;color:#0b1220}
+    @media (max-width:880px){.body{grid-template-columns:1fr;}.contact{text-align:left}.header{flex-direction:column;align-items:flex-start}.right-column{border-left:none;border-top:1px solid #f1f5f9;margin-top:10px}}
+    /* Print friendly tweaks */
+    @media print{body{background:white;padding:0} .container{max-width:720px} .card{box-shadow:none} .header, .body{padding:16px} .right-column{background:transparent}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" role="document">
+      <header class="header">
+        <div>
+          <div class="name">Timh Bergström</div>
+          <div class="sub">Senior DevOps, Platform- , Cloud- & Security Engineer with 20+ years experience</div>
+          <div style="margin-top:8px;color:var(--muted);font-size:13px">Open to roles in DevOps, SRE, Platform Engineering, Cybersecurity, AI/ML, Web3/DeFi, FinTech etc</div>
+          <div>&nbsp;
+          </div>
+        </div>
+        <div class="contact">
+          <div>Ho Chi Minh City, Vietnam</div>
+          <div>timh.bergstrom@gmail.com</div>
+          <div>+84 (0) 933 193 318</div>
+          <div>https://github.com/rnts08</div>
+          <div>https://www.linkedin.com/in/timhbergstrom/</div>
+        </div>
+      </header>
+
+      <div class="body">
+        <main>
+          <section class="section summary">
+            <h3>Professional Summary</h3>
+            <p class="lead">Highly Motivated Senior DevOps, Infrastructure, Cloud, and Security Engineer with 20+ years of experience designing, automating, and scaling mission-critical systems across data centers, cloud platforms, and edge environments. Specialized in Linux, Kubernetes, networking, Infrastructure as Code (IaC), DevSecOps, and large-scale platform engineering. Experienced with AI/ML operations, GPU platforms, and securing AI workloads. Strong advocate for automation, simplification, and cost-efficient design, with a focus on reliability and reducing risk.</p>
+          </section>
+
+          <section class="section experience">
+            <h3>Professional Experience</h3>
+
+            <div class="item">
+              <div class="role">Technical Founder — Antler — (Startup)</div>
+              <div class="meta">May 2025 – Nov 2025 — Ho Chi Minh City / Remote</div>
+              <ul>
+                <li>Establish and maintain reliable, end-to-end encrypted communication channels for users in restrictive environments.</li>
+                <li>Implement well-audited open-source software and maintain transparent configuration pipelines.</li>
+                <li class="tech">Technologies: Linux, Ansible, Go, PostgreSQL, Python, Grafana, Terraform, AWS, GCP, WireGuard, Socks5, SSL/TLS.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="role">Senior DevOps Engineer / SRE (Contract) — Chronicle Labs Protocol</div>
+              <div class="meta">Oct 2024 – Jun 2025 — Remote, Switzerland</div>
+              <ul>
+                <li>Managed cloud and hosted infrastructure for the Chronicle oracle suite, internal tools and validator and RPC infrastructure.</li>
+                <li class="tech">Technologies: Linux, Kubernetes, AWS, Bare-metal, Web3, ArgoCD, Helm, Ansible, Terraform, Grafana, Vault, GitHub CI/CD, Go, Rust, Solidity, Python, Bash.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="role">Technical Lead / AI/ML Research & Cybersecurity — Startup</div>
+              <div class="meta">Jan 2022 – Oct 2024 — Remote, Ho Chi Minh City</div>
+              <ul>
+                <li>Researched and improved AI agents’ ability to interpret work orders and rules of engagement.</li>
+                <li>Built knowledge graphs and integrated them with AI models to enhance decision-making processes for security operations and penetration testing.</li>
+                <li>Performed penetration-testing tasks; conducted non-destructive vulnerability exploitation and evidence collection (with permission).</li>
+                <li class="tech">Technologies: AI/ML Tools, Python, LLM infrastructure, Kubernetes, Vector databases, Security tooling, penetration testing tools and RAG systems.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="role">Senior DevOps Engineer (Contract) — Parsly</div>
+              <div class="meta">Aug 2023 – Dec 2023 — Remote, Stockholm</div>
+              <ul>
+                <li>Managed AWS infrastructure, optimized costs, set up monitoring, and built scalable infrastructure.</li>
+                <li class="tech">Technologies: Linux, AWS, Terraform/IaC, AWS Lambda, AWS Aurora, Load Balancers, Route53, Kotlin, Python, TypeScript, Go.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="role">Senior System Administrator (Contract) — InteliSys Aviation</div>
+              <div class="meta">May 2023 – Aug 2023 — Ho Chi Minh City / Hybrid</div>
+              <ul>
+                <li>Managed infrastructure across VMware and AWS cloud; maintained Windows and Linux servers, Networking, Security and MSSQL databases.</li>
+                <li>OnCall rotation with responsibility of global infrastructure for airports and airlines ticketing and cargo operations.</li>
+                <li class="tech">Technologies: Linux, AWS, VMWare, Windows, Active Directory, IIS, .NET, PowerShell, Terraform, Ansible, MSSQL.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="role">DevOps Engineer — Ryte</div>
+              <div class="meta">Jan 2022 – Feb 2023 — Hybrid, HCMC</div>
+              <ul>
+                <li>Managed and automated cloud infrastructure on AWS; improved CI/CD pipelines and deployment processes.</li>
+                <li>Designed and implemented new data-lake on AWS; created ETL pipelines processing millions of log lines daily.</li>
+                <li class="tech">Technologies: Linux, AWS, data-lake, ETL, IaC, Kubernetes, Serverless, Terraform/CDK, Python, Go, Bash, Grafana, Datadog.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="role">Founder & Tech Lead — TBTech</div>
+              <div class="meta">Oct 2015 – Jun 2022 — Bangkok / Hybrid</div>
+              <ul>
+                <li>Built multiple services including Sapiar, Aeromotorcy, hotel overstock platform, AdTech system for AsiaMX, and SimpleVPN.com.</li>
+                <li class="tech">Technologies: Linux, Ansible, Python, Go, PHP, JS, PostgreSQL/MySQL/MongoDB/Redis, Containers, AWS, DigitalOcean, Nginx, HAProxy, Cryptocurrency payments, Web3.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="role">Lead System Engineer — Ooyala / Videoplaza</div>
+              <div class="meta">Aug 2010 – Oct 2015 — Stockholm</div>
+              <ul>
+                <li>Scaled AdTech platform to a global, multi-POP infrastructure; built zero-downtime database infrastructure and managed edge networking (BGP, DNS).</li>
+                <li>Handled 14+ Gbps traffic at peak without drops and led a team of 5 engineers.</li>
+                <li class="tech">Technologies: Linux, Apache Tomcat, PostgreSQL, Salt, Ansible, Cassandra, Juniper/Cisco, BGP, OSPF, Perl, Python, C, Bash, MongoDB, AWS, KVM, LXC, GlusterFS, MongoDB, Redis.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="role">System Administrator — Diino AB</div>
+              <div class="meta">Apr 2007 – Oct 2010 — Stockholm</div>
+              <ul>
+                <li>Managed back-end infrastructure across Linux, BSD, and SUN Solaris; built redundant storage system (2+ Pb) using GlusterFS.</li>
+                <li class="tech">Technologies: Linux/Unix/Solaris, NFS, SAN/NAS, iSCSI, Perl, Python, Bash, C.</li>
+              </ul>
+            </div>
+
+          </section>
+
+        </main>
+
+        <aside class="right-column">
+          <section class="section">
+            <h3>Areas of Expertise</h3>
+            <div class="small">
+              <div class="chip">DevOps Engineering</div>
+              <div class="chip">Cloud Infrastructure (AWS, GCP)</div>
+              <div class="chip">Platform Automation &amp; IaC</div>
+              <div class="chip">Linux System Administration &amp; Virtualization</div>
+              <div class="chip">Networking Design &amp; Management</div>
+              <div class="chip">Security &amp; Penetration Testing / DevSecOps</div>
+              <div class="chip">Observability &amp; Monitoring Systems</div>
+              <div class="chip">Distributed Systems &amp; High-Availability</div>
+              <div class="chip">Data Platform &amp; Databases (PostgreSQL, MySQL, MSSQL, MongoDB, Redis)</div>
+              <div class="chip">Web3 / DeFi / Blockchain Infrastructure</div>
+              <div class="chip">Penetration Testing</div>
+              <div class="chip">Security Engineering</div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h3>Certifications</h3>
+            <ul class="cert-list">
+              <li>Certified Penetration Tester (CPT) — 2024</li>
+              <li>GPEN — 2023</li>
+              <li>Certified Ethical Hacker (CEH) — 2023</li>
+              <li>AWS Certified Cloud Practitioner — 2021</li>
+              <li>AWS Solutions Architect: Associate — 2022</li>
+              <li>AWS SysOps Administrator: Associate — 2022</li>
+              <li>AWS DevOps Engineer: Professional — 2023</li>
+              <li>JNCIA, JNCIE, JNCIE-DC, JNCIE-SP — 2010–2013</li>
+              <li>CCNA, CCIE-EI, CCIE-DC, CCIE-SEC — 2007–2010</li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <h3>Education</h3>
+            <ul class="edu-list">
+              <li>Uppsala University — Music Theory and Composition (2001–2002)</li>
+            </ul>
+          </section>
+
+        </aside>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

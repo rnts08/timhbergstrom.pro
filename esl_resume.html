@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timh Bergström — ESL Teacher & DevOps Professional</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @page {
+    size: A4;
+    margin: 12.7mm;
+  }
+
+  @media print {
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 100%;
+      max-width: 100%;
+      padding: 12.7mm;
+    }
+  }
+
+  body {
+    font-family: 'Segoe UI', 'Calibri', Arial, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.3;
+    color: #333;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    max-width: 8.5in;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5in;
+    background: white;
+  }
+
+  header {
+    margin-bottom: 12pt;
+    padding-bottom: 8pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16pt;
+    position: relative;
+  }
+
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2pt;
+    background-color: #1a1a1a;
+    z-index: 0;
+  }
+
+  .header-content {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 8pt;
+  }
+
+  .header-image {
+    width: 125px;
+    height:200px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2pt solid white;
+    box-shadow: 0 2pt 4pt rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+  }
+
+  h1 {
+    font-size: 20pt;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 0.5pt;
+    margin: 0;
+  }
+
+  .contact-info {
+    font-size: 9pt;
+    color: #444;
+    margin-top: 2pt;
+  }
+
+  .contact-info p {
+    margin: 1pt 0;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 11pt;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-top: 10pt;
+    margin-bottom: 6pt;
+    padding-bottom: 2pt;
+    border-bottom: 1pt solid #999;
+  }
+
+  .section {
+    margin-bottom: 6pt;
+  }
+
+  .job-entry {
+    margin-bottom: 6pt;
+  }
+
+  .job-title {
+    font-weight: 700;
+    font-size: 10pt;
+    color: #1a1a1a;
+    margin: 0;
+  }
+
+  .job-meta {
+    color: #666;
+    font-size: 9pt;
+    margin: 1pt 0 2pt 0;
+  }
+
+  .job-meta-inline {
+    color: #666;
+    font-size: 9pt;
+    font-weight: normal;
+    margin-left: 8pt;
+    float: right;
+  }
+
+  .job-details {
+    margin-left: 12pt;
+    font-size: 10pt;
+    margin-bottom: 2pt;
+  }
+
+  .job-details p {
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  ul {
+    margin: 2pt 0 0 12pt;
+    padding: 0;
+    font-size: 10pt;
+  }
+
+  li {
+    margin-bottom: 1pt;
+    line-height: 1.2;
+  }
+
+  p {
+    margin: 0 0 4pt 0;
+    line-height: 1.3;
+    font-size: 10pt;
+  }
+
+  .summary-text {
+    text-align: justify;
+    font-size: 10pt;
+    line-height: 1.35;
+  }
+
+  .skill-category {
+    margin-bottom: 2pt;
+    line-height: 1.3;
+  }
+
+  .skill-category strong {
+    font-weight: 700;
+  }
+
+  .two-column {
+    display: flex;
+    gap: 20pt;
+  }
+
+  .column {
+    flex: 1;
+  }
+
+  .column p {
+    margin: 2pt 0;
+    font-size: 10pt;
+    line-height: 1.3;
+  }
+
+  .no-break {
+    page-break-inside: avoid;
+  }
+
+  .compact-list {
+    margin: 2pt 0 0 12pt;
+    font-size: 10pt;
+    line-height: 1.25;
+  }
+
+  .compact-list li {
+    margin: 1pt 0;
+  }
+
+  hr {
+    border: none;
+    border-top: 1pt solid #ccc;
+    margin: 8pt 0;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+    <div class="header-content">
+      <h1>Timh Bergström</h1>
+      <div class="contact-info">
+        <p>+84 (0) 933 193 318 • timh.bergstrom@gmail.com • Ho Chi Minh City, Vietnam</p>
+      </div>
+    </div>
+    <img src="timh.jpeg" alt="Profile" class="header-image">
+  </header>
+
+  <section class="section no-break">
+    <h2>Professional Summary</h2>
+    <p class="summary-text">Dynamic ESL teacher and engineer with many years of combined experience in language instruction and classroom management. Specialized in pronunciation, speaking, academic writing, and IELTS preparation (Bands 6–7.5). Proven ability to design and deliver engaging curricula for learners from early childhood through adult professionals, combined with a long professional career and a extensive travel experience. I am social and easily build rapport with diverse groups of learners.</p>
+  </section>
+
+  <section class="section no-break">
+    <h2>Teaching Experience</h2>
+
+    <div class="job-entry">
+      <p class="job-title">ESL Substitute Teacher - Various</p>
+      <p class="job-meta">2025–Present</p>
+      <ul class="compact-list">
+        <li>Substitute ESL teaching, grades 1-12 and IELTS coaching.</li>
+      </ul>
+    </div>
+
+    <div class="job-entry">
+      <p class="job-title">ESL Teacher – English Coffee Club</p>
+      <p class="job-meta">2023–2024</p>
+      <ul class="compact-list">
+        <li>Speaking & pronunciation classes (Grades 8–12)</li>
+        <li>Professional English for adults</li>
+        <li>IELTS coaching (Bands 6–7.5)</li>
+        <li>In-person and online classes</li>
+      </ul>
+    </div>
+
+    <div class="job-entry">
+      <p class="job-title">Head ESL Teacher – English Coffee Club</p>
+      <p class="job-meta">2020–2022</p>
+      <ul class="compact-list">
+        <li>Curriculum creation for pre-school to adult learners</li>
+        <li>Classroom management and teacher mentoring</li>
+        <li>Speaking & pronunciation classes (Grades 8–12)</li>
+        <li>Academic writing & presentation for high school</li>
+        <li>Professional English for adults</li>
+        <li>IELTS coaching for university admission</li>
+        <li>In-person and online classes</li>
+      </ul>
+    </div>
+
+    <div class="job-entry">
+      <p class="job-title">ESL Teacher – Multiple Institutions (AMS, Oxford English, Binh Duong, Viet My School, English Coffee Club)</p>
+      <p class="job-meta">2018–2020</p>
+      <ul class="compact-list">
+        <li>Cambridge curriculum (Ages 7–12)</li>
+        <li>Let's Go (Grades 1–3)</li>
+        <li>Speaking & listening for learners up to age 13</li>
+        <li>Academic writing & presentation for high school</li>
+        <li>Professional English for adults</li>
+        <li>On-site workplace English training</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section no-break">
+    <h2>Additional Professional Experience</h2>
+    <p>(Relevant for building rapport with adult learners, teaching professional English, and applying technical expertise in educational settings.)</p>
+    <div class="job-entry">
+      <p class="job-title">Senior DevOps Engineer – Chronicle Labs <span class="job-meta-inline">2024–2025</span></p>
+    </div>
+
+    <div class="job-entry">
+      <p class="job-title">Senior DevOps Engineer – Parsly <span class="job-meta-inline">2023</span></p>
+    </div>
+
+    <div class="job-entry">
+      <p class="job-title">Senior System Administrator – Intelisys Aviation <span class="job-meta-inline">2023</span></p>
+    </div>
+
+    <div class="job-entry">
+      <p class="job-title">Senior DevOps Engineer – Ryte GmbH Vietnam <span class="job-meta-inline">2022–2023</span></p>
+    </div>
+
+    <div class="job-entry">
+      <p class="job-title">Head of Platform Engineering – Videoplaza AB <span class="job-meta-inline">2007–2013</span></p>
+    </div>
+
+    <div class="job-entry">
+      <p class="job-title">Self-Employed Consultant – DevOps/SRE/Development <span class="job-meta-inline">2013–2017</span></p>
+    </div>
+
+    <div class="job-entry">
+      <p class="job-title">Linux System Administrator – Various Organizations (Diino AB, Lenovo AB, Azalea AB, Box AB) <span class="job-meta-inline">2002–2007</span></p>
+    </div>
+
+    <div class="job-entry">
+      <p class="job-title">Military Contractor - Afghanistan, Iraq<span class="job-meta-inline">2000–2002</span></p>
+    </div>
+  </section>
+
+  <section class="section no-break">
+    <h2>Education</h2>
+    <p><strong>Uppsala University</strong> — Classical Guitar Composition (1998–2000)</p>
+  </section>
+
+  <section class="section no-break">
+    <h2>Core Competencies</h2>
+    <div class="skill-category">
+      <strong>Language Teaching:</strong> ESL/EFL instruction, pronunciation coaching, IELTS preparation, academic writing, presentation skills, professional English, curriculum design, classroom management, digital learning platforms
+    </div>
+    <div class="skill-category">
+      <strong>Technical Background (for professional English contexts):</strong> DevOps, cloud engineering, infrastructure automation, Linux systems administration, networking, backend systems programming, enterprise and startup environments
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Languages</h2>
+    <div class="two-column">
+      <div class="column">
+        <p><strong>English</strong> — Native/Fluent</p>
+        <p><strong>Swedish</strong> — Native/Fluent</p>
+        <p><strong>German</strong> — A1</p>
+      </div>
+      <div class="column">
+        <p><strong>Spanish</strong> — A1</p>
+        <p><strong>Thai</strong> — Beginner</p>
+        <p><strong>Vietnamese</strong> — Beginner</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
