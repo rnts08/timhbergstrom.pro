@@ -23,5 +23,7 @@ jobs:
           key: ${{ secrets.SSHKEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           port: ${{ secrets.SSHPORT }}
+          overwrite: true
+          protocol: tcp4
           source: "*.html,*.css,*.js,*.pdf,*.png,*.jpeg"
           target: ${{ secrets.TARGET }}
