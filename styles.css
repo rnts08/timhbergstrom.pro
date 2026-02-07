@@ -189,7 +189,8 @@ nav a:hover {
 }
 
 .bottom-grid .skill-group,
-.bottom-grid .references {
+.bottom-grid .references,
+.bottom-grid .projects {
     flex: 1;  /* Make all sections take equal space */
 }
 
@@ -224,6 +225,15 @@ nav a:hover {
 .bottom-grid li:hover {
     background: rgba(255, 153, 0, 0.2);
     transform: translateY(-2px);
+}
+
+.bottom-grid a {
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+.bottom-grid a:hover {
+    text-decoration: underline;
 }
 
 .bottom-grid .detail {
