@@ -177,7 +177,7 @@ nav a:hover {
 
 .bottom-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* Three equal columns */
+    grid-template-columns: repeat(2, 1fr);  /* Two columns for 4 items */
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -230,10 +230,17 @@ nav a:hover {
 .bottom-grid a {
     color: var(--header-color);
     text-decoration: none;
+    transition: all 0.2s ease;
 }
 
 .bottom-grid a:hover {
     text-decoration: underline;
+}
+
+.bottom-grid .projects a:hover {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0 0 8px var(--header-color);
 }
 
 .bottom-grid .detail {
@@ -349,12 +356,6 @@ hr {
 .contact-footer nav a:hover {
     text-decoration: none;
     border-bottom: 2px solid var(--header-color);
-}
-
-@media (max-width: 1024px) {
-    .bottom-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 @media (max-width: 768px) {
