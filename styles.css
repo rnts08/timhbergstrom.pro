@@ -382,6 +382,7 @@ hr {
         min-width: calc(100% - 1rem);
         max-width: calc(100% - 1rem);
     }
+	
 }
 
 .certifications.education ul {
@@ -417,7 +418,7 @@ hr {
 .word-cloud .cloud span {
     font-weight: 600;
     display: inline-block;
-    color: #1a1a1a;
+    color: #CACACA;
     opacity: 0.85;
     transition: transform 0.2s ease, opacity 0.2s ease;
     font-size: calc(var(--size) * 0.45rem + 0.5rem);
